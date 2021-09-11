@@ -1,0 +1,310 @@
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    /* FONT */
+    --font: "Bai Jamjuree", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+
+.miniHead {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: 11pt;
+    line-height: 1rem;
+    margin-top: 0;
+}
+
+header {
+    background-image: url(bg-header-mobile.png);
+    background-color: linear-gradient( to bottom, rgba(250, 248, 248, 0.836) 100%, white 0%);
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.brand {
+    width: 40%;
+    margin-top: 3rem;
+    background-color: none;
+}
+
+h1 {
+    font-size: 1.33rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: var(--dark-grayish-blue);
+}
+
+h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: var(--dark-grayish-blue);
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: var(--dark-grayish-blue);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.btn1:hover {
+    background-color: hsla(171, 66%, 44%, 0.534);
+}
+
+.btn2:hover {
+    background-color: hsla(233, 100%, 69%, 0.555);
+}
+
+.foot_link:hover {
+    color: hsla(171, 93%, 28%, 0.534);
+}
+
+.btn1 {
+    padding: 0.65rem 3rem;
+    background-color: var(--strong-cyan);
+    border: none;
+    border-bottom: 3px solid hsl(171, 67%, 25%);
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 0.7rem;
+    box-shadow: 1px 5px 20px 1px hsla(171, 66%, 44%, 0.267);
+}
+
+.btn2 {
+    padding: 0.65rem 3rem;
+    background-color: var(--light-blue);
+    border: none;
+    border-bottom: 3px solid hsl(233, 46%, 44%);
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    color: rgb(238, 238, 238);
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 0.7rem;
+    box-shadow: 1px 5px 20px 1px hsla(233, 100%, 69%, 0.267);
+}
+
+.snips {
+    padding: 2rem;
+}
+
+.dsktop {
+    justify-content: center;
+}
+
+.features {
+    font-size: 0.75rem;
+    color: var(--dark-grayish-blue);
+    padding: 2rem;
+}
+
+.access {
+    padding: 2rem;
+}
+
+.conclusion {
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+.icons {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.blocks {
+    margin-bottom: 1rem;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#biz {
+    width: 38%;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.summary {
+    padding: 2rem;
+}
+
+footer {
+    padding: 3rem;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.377);
+}
+
+#footLogo {
+    width: 20%;
+}
+
+.f-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    margin-bottom: 1.3rem;
+}
+
+.f-link a {
+    padding: 0.3rem;
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: gray;
+    margin: 0.3rem;
+}
+
+.social {
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+
+@media (min-width: 500px) {
+    header {
+        background-image: url(bg-header-desktop.png);
+        background-size: cover;
+    }
+    .buttons {
+        display: inline-block;
+    }
+    .btn1 {
+        margin-right: 1rem;
+    }
+    .btn2 {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 1090px) {
+    .container {
+        width: 100%;
+        margin: auto 0;
+    }
+    .brand {
+        padding-top: 0;
+        margin-top: 2rem;
+        width: 11%;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+        color: var(--dark-grayish-blue);
+    }
+    .heads {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
+        width: 60%;
+        margin: 0 auto;
+        line-height: 1.4em;
+    }
+    .features p {
+        font-size: 0.6rem;
+    }
+    .hero1 {
+        display: flex;
+    }
+    #featBox {
+        width: 100%;
+        margin-left: 0;
+    }
+    .p-feat {
+        margin-left: 0;
+    }
+    .miniHead {
+        font-size: 1.3rem;
+    }
+    .features {
+        flex: 1;
+        padding-right: 0;
+        text-align: left;
+    }
+    .photo {
+        padding-right: 0;
+    }
+    .dsktop {
+        width: 1100px;
+        margin-left: -10rem;
+        margin-right: 0;
+    }
+    .blocks {
+        width: 100%;
+    }
+    #p_small {
+        width: 90%;
+        margin: 0.5rem;
+    }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #footLogo {
+        margin-top: 1.3rem;
+        width: 35%;
+    }
+    .f-link {
+        display: flex;
+        flex-direction: row;
+    }
+    .foot_link {
+        width: 30%;
+    }
+    .icons {
+        flex-direction: row;
+    }
+    .companies {
+        flex-direction: row;
+    }
+    .f-social {
+        margin-top: 2rem;
+    }
+}
